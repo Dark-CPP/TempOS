@@ -10,7 +10,7 @@ INPUT
 
 OUTPUT_FORMAT
 (
-  Kernel.bin
+  kernel.bin
 )
 
 SECTIONS
@@ -34,7 +34,7 @@ SECTIONS
 
   .bss : ALIGN(0x1000)
   {
-  *(COMMON)
-  *(.bss)
+    *(COMMON)
+    *(.bss)
   }
 }
