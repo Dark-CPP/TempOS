@@ -9,4 +9,6 @@ wsl $WSLENV/x86_64-elf-ld -T"link.ld"
 
 copy /b bootloader.bin+kernel.bin bootloader.flp
 
+"C:\Program Files\qemu\qemu-system-x86_64" -fda bootloader.flp -d int
+
 pause
